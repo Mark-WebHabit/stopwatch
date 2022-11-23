@@ -1,0 +1,52 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./img/timer.jpg') no-repeat center center / cover ;
+}
+
+.stopwatch{
+    width: 500px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+}
+.stopwatch .time-status{
+    padding: 1em;
+}
+.stopwatch .time-status p{
+    font-size: 4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.stopwatch .buttons button{
+    padding: 0.3em 0.8em;
+    font-size: 2rem;
+    margin: 0 0.8em;
+    border-radius: 1em;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 500ms;
+}
+.stopwatch .buttons button:hover{
+    scale: 1.1;
+}
+.stopwatch .buttons button#play{
+    background-color: #008000;
+}
+.stopwatch .buttons button#reset{
+    background-color: red;
+}
+.stopwatch .buttons button#pause{
+    background-color: #b32d00;
+}
